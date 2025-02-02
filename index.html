@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport " content="width=device-width initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e8c3e56336.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!--<h1><span>PS</span>tudio</h1>-->
+                <img src="C:\Users\Prasad Kalyan Shinde\AppData\Local\Microsoft\Windows\INetCache\IE\9MT0RFUP\20250104_202821[1].png" class="logo">
+                <h1></h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Graphics designer</p>
+                <h1>Hi, I'm <span>Prasad</span> <br>Shinde from pune</h1>
+            </div>
+        </div>
+    </div><br>
+    <!------About----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="D:\Portfolio\IMG_20240427_141513.jpg">
+                </div>
+                <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>
+                 Hello, im frontend developer and Graphics designer
+                 and i pursuing Bachelor of Engineering in Information 
+                 Technology from Savitribai Phule Pune University.
+                 I completed my frontend developing course from coursera
+                 and i have also skill graphics designing.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills" >
+                  <ul>
+                   <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                   <li><span>Web Development </span><br>Web app Development</li>
+                   <li><span> App Development</span><br>Building Android/ioS apps</li>
+                  </ul>
+                </div>
+
+                <div class="tab-contents" id="experiance">
+                 <ul>
+                    <li><span>2024</span><br>Web Development internship at CODSOFT pvt</li>
+                    <li><span>2023 </span><br>Content Creation at yt channel </li>
+                    <li><span>2022 </span><br>Graphics Designing</li>
+                 </ul>
+                </div>
+            
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Bachelor of Engineering (IT)</li>
+                        <li><span>2023-2024 </span><br>Web app Development at coursera</li>
+                        <li><span> 2022-2023 </span><br>Graphics Designing</li>
+                    </ul>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!---------services----------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+              <h2>Web Design</h2>
+              <p>Designing various types of web services are design it helps 
+                for marketing in subsector.</p><br>
+                <a href="#">learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX design</h2>
+            <p>Designing various types of web services are design it helps 
+              for marketing in subsector.</p>
+              <a href="#">learn more</a>
+          </div>
+
+         <div>
+        <i class="fa-brands fa-app-store"></i>
+         <h2>Graphics Design</h2>
+         <p>In Graphics design we create designs of poster and banners it help for marketing.</p>
+          <a href="#">learn more</a>
+          </div>
+        </div>
+    </div>
+</div>    
+<!----Portfolio---->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="D:\Portfolio\images\work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <a href src="#"><i class="fas fa-external-link-alt"></i></a>
+                    <p>The app connects you yo to the talented people around the world.</p></p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="D:\Portfolio\images\work-2.png">
+                <div class="layer">
+                    <h3>Online shopping App</h3>
+                    <a href src="#"><i class="fas fa-external-link-alt"></i></a>
+                    <p>The app connects you yo to the talented people around the world.</p></p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="D:\Portfolio\images\work-3.png">
+                <div class="layer">
+                    <h3>Calculator App</h3>
+                    <a href src="#"><i class="fas fa-external-link-alt"></i></a>
+                    <p>The app connects you yo to the talented people around the world.</p></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div> <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+              for(tablink of tablinks){
+                 tablink.classList.remove("active-link");
+              }
+
+              for(tabcontent of tabcontents){
+                 tabcontent.classList.remove("active-tab");
+              }
+              event.currentTarget.classList.add("active-link");
+              document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+     </script>  
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>01234567892</p>
+                <div class="social-icons">
+                    <a href="httpsz://facrbook.com/"><i class="fa-brands fa-facebook"></i></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+               <a href="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                   <input type="text" name="Name" placeholder="Your Name" required>
+                   <input type="email" name="Email" placeholder="Your Email" required>
+               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit"> Submit</form>
+            </div>       
+        </div>
+    </div>
+</div>
+  <div class="copyright">
+    <p>Copyrighted PStudio. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+  </div>
+</body>
+</html>
